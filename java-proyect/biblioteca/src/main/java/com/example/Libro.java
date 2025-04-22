@@ -86,7 +86,7 @@ public class Libro {
     }
 
     public void devolver() {
-        if (this.prestado) {
+        if (!this.prestado) {
             System.out.println("Este libro no está prestado");
         } else {
             this.prestado = false;
@@ -129,7 +129,7 @@ public class Libro {
     @Override
     public String toString() {
 
-        String mensaje = "El libro" + this.ISBN + " con título " + this.titulo + " y autor" + this.autor +" tiene" + this.numeroPaginas + "páginas y ";
+        String mensaje = "El libro " + this.ISBN + " con título " + this.titulo + " y autor" + this.autor +" tiene" + this.numeroPaginas + "páginas y ";
 
         if (!this.prestado) mensaje += " no ";
 

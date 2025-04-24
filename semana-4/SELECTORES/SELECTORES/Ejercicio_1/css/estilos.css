@@ -1,0 +1,20 @@
+html{
+    border: 2px solid yellow;
+}
+body{
+    margin: 5px;
+    border: 2px solid blue;
+}
+img{
+    margin: 15px;
+    border: 2px solid orange;
+    border-radius: 50px;
+}
+p{
+    border: 2px solid red;
+padding: 10px;
+text-align: justify;
+}
+*{
+    border: 2px solid green;
+}

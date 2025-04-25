@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gran Muralla Inka</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../img/logopollo.jpg" alt="Logo Pollo">
+        </div>
+
+        <nav class="nav">
+            <div class="dropdown">
+                <button class="nav-link dropdown-toggle">
+                    NUESTRA CARTA ▼
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Carta completa</a>
+                </div>
+            </div>
+
+            <a href="#" class="nav-link">
+                TE BRINDAMOS
+            </a>
+
+            <div class="dropdown">
+                <button class="nav-link dropdown-toggle">
+                    NUESTRAS CASAS ▼
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">CASA CARABAYLLO</a>
+                    <a href="#" class="dropdown-item">CASA PUENTE PIEDRA</a>
+                </div>
+            </div>
+
+            <a href="#" class="nav-link">
+                NUESTRA HISTORIA
+            </a>
+
+            <a href="#" class="nav-button">RESERVACIONES</a>
+        </nav>
+    </header>
+    <div class="hero-carousel">
+        <div class="carousel-slide">
+            <div class="slide-content">
+                <img src="../img/Picture1.jpg" alt="" class="center-image">
+                <div class="carousel-banner">
+                    <h2>En esta casa sí hay, cariño</h2>
+                    <p>Más de una década contigo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide">
+            <div class="slide-content">
+                <img src="../img/Picture2.jpg" alt="" class="center-image">
+                <div class="carousel-banner">
+                    <h2>En esta casa sí hay, cariño</h2>
+                    <p>Más de una década contigo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-slide">
+            <div class="slide-content">
+                <img src="../img/Picture3.jpg" alt="" class="center-image">
+                <div class="carousel-banner">
+                    <h2>En esta casa sí hay, cariño</h2>
+                    <p>Más de una década contigo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="content">
+        <section class="schedule">
+            <h2 class="section-title">Nuestro horario de atención</h2>
+            <table class="schedule-table">
+                <tr>
+                    <th>Lunes - Sábado</th>
+                    <th>Domingo - Feriados</th>
+                </tr>
+                <tr>
+                    <td>09:00am - 11:00pm</td>
+                    <td>09:00am - 6:00pm</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="info-cards">
+            <div class="card">
+                <h3>Restaurant Ouru 2024</h3>
+                <p>RECOMENDADO</p>
+            </div>
+            <div class="card">
+                <h3>Restaurant Ouru 2024</h3>
+                <p>RECOMENDADO</p>
+            </div>
+            <div class="card">
+                <h3>Informes y pedidos</h3>
+                <p>Sabores</p>
+                <p>Petrarios</p>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hero-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="about-title">La Gran Muralla Inka <span class="subtitle">Restaurante - Chifa</span></h2>
+                <p class="about-description">
+                    Somos un chifa líder con 3 años de tradición, enfocado en preservar la sazón de la
+                    gastronomía peruana.
+                    La Gran Muralla Inka es más que un restaurante, es un hogar y lo demostramos en la calidez de
+                    nuestra
+                    atención
+                    en cada visita a esta casa y en los detalles de cada plato.
+                </p>
+                <a href="#" class="read-more-btn">Leer Más</a>
+            </div>
+            <div class="about-images">
+                <img src="" alt="Interior del restaurante" class="about-img">
+                <img src="" alt="Plato destacado" class="about-img">
+            </div>
+        </div>
+    </section>
+    <section class="subscribe-section">
+        <div class="subscribe-container">
+            <h2 class="subscribe-title">Suscríbete y recibe muchos beneficios</h2>
+            <br>
+
+            <ul class="benefits-list">
+                <li>✅ Beneficio exclusivo 1</li>
+                <li>✅ Beneficio exclusivo 2</li>
+                <li>✅ Descuentos especiales</li>
+                <li>✅ Novedades antes que nadie</li>
+            </ul>
+
+            <form class="subscribe-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Nombres" required>
+                </div>
+                <button type="submit" class="subscribe-btn">Suscribirse</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Informes y pedidos</h3>
+                <p>Contáctanos para más información</p>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Mapa del Sitio</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nuestra historia</a></li>
+                    <li><a href="#">Nuestra carta</a></li>
+                    <li><a href="#">Te brindamos</a></li>
+                    <li><a href="#">Casa Carabayllo</a></li>
+                    <li><a href="#">Casa Puente Piedra</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Casa Carabayllo</h3>
+                <address class="footer-address">
+                    <p>Av Universitaria 2392</p>
+                    <p>Carabayllo, Lima, Perú</p>
+                    <p>01 449 1395</p>
+                    <p><a href="mailto:carabayllo@lagranmurallainka.com">carabayllo@lagranmurallainka.com</a></p>
+                    <p>+51 949 735 969</p>
+                </address>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Casa Puente Piedra</h3>
+                <address class="footer-address">
+                    <p>Av Puente Piedra 6326</p>
+                    <p>Puente Piedra, Lima, Perú</p>
+                    <p>01 348 7802</p>
+                    <p><a href="mailto:puentepiedra@lagranmurallainka.com">puentepiedra@lagranmurallainka.com</a></p>
+                    <p>+51 962 221 266</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-message">
+            <p>La Gran Muralla Inka es más que un Chifa, es un hogar y lo demostramos en la calidez de nuestra
+                atención en cada visita a esta casa.</p>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2025 La Gran Muralla Inka. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* Scroll suave */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -11,7 +16,7 @@ h1 {
     font-size: 3.5rem;
 }
 
-h2{
+h2 {
     font-size: 2.7rem;
 }
 
@@ -43,6 +48,10 @@ button:hover {
     margin: auto;
 }
 
+.color-acento {
+    color: blueviolet;
+}
+
 header {
     background-color: aliceblue;
 }
@@ -68,7 +77,7 @@ header nav {
     padding-bottom: 25px;
 }
 
-header a{
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
@@ -77,4 +86,201 @@ header a{
 
 header a:hover {
     color: blueviolet;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url(../media/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75rem;
+}
+
+
+#somos-proya .container {
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#nuestros-programas {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container {
+    padding: 150px 12px;
+}
+
+#nuestros-programas h2 {
+    margin-top: 0px;
+    font-size: 3.2em,
+}
+
+#nuestros-programas p {
+    display: none;
+}
+
+#nuestros-programas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url(../media/hero.jpg);
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url(../media/hero.jpg);
+
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url(../media/hero.jpg);
+
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#aplica-ya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2 {
+    font-size: 3rem;
+}
+
+#aplica-ya button {
+    font-size: 1.75rem;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0px;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:720px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.711);
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 4rem;
+    }
+
+    #somos-proya .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2 {
+        margin-top: 0px;
+
+    }
+
+    #somos-proya .img-container {
+        background-image: url("../media/hero.jpg");
+        background-size: cover;
+        background-position: center center;
+
+        height: 500px;
+        width: 400px;
+
+    }
+
+    #nuestros-programas .programas {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #nuestros-programas p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h3 {
+        margin-top: 0
+    }
+
+    #nuestros-programas .carta {
+        padding: 15px;
+    }
 }

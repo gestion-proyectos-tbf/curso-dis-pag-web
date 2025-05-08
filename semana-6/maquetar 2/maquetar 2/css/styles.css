@@ -1,0 +1,142 @@
+/* Importar la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    /* Aplicar Poppins como fuente predeterminada */
+}
+
+body {
+    background-color: orange;
+}
+
+#contenedor {
+    width: 95%;
+    margin: 30px auto;
+}
+
+/* ...resto del código existente... */
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: orange;
+
+}
+
+#contenedor {
+    width: 95%;
+    margin: 30px auto;
+}
+
+header {
+    background-color: beige;
+}
+
+header h1 {
+    padding: 20px;
+    text-align: center;
+    color: chocolate;
+}
+
+header img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+nav {
+    background-color: yellow;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: red;
+    display: inline-block;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 25%;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+aside h1 {
+    padding: 10px 0;
+    text-align: center;
+    color: firebrick;
+}
+
+aside h3 {
+    padding: 5px 0;
+    color: blue;
+}
+
+aside p {
+    padding: 5px 0;
+    text-align: justify;
+}
+
+aside ul {
+    padding: 5px 25px 5px 25px;
+}
+
+aside ol {
+
+    padding: 5px 25px 5px 25px;
+}
+
+aside img {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+}
+
+section {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+section figure {
+    width: 45%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section figure img {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+}
+
+section figure figcaption {
+    margin: 10px;
+    text-align: center;
+    color: green;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: green;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: white;
+}
